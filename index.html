@@ -1,0 +1,95 @@
+<!doctype html>
+<!-- JevPilot public landing page (GitHub Pages): what it is, screenshots, pricing, privacy link. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JevPilot: AI Browser Agent</title>
+<meta name="description" content="An AI agent in your own Chrome: tell it what to do and it clicks, types and submits. Learns once, replays fast. Bring your own OpenRouter key.">
+<meta property="og:title" content="JevPilot: AI Browser Agent">
+<meta property="og:description" content="Tell it what to do and it does it in your browser. Learns once, replays fast.">
+<meta property="og:image" content="assets/screenshot-1.png">
+<link rel="icon" href="assets/icon.png">
+<style>
+  :root { --bg:#fbfbfd; --card:#fff; --fg:#17182a; --mute:#5c5f73; --line:#e4e4ee; --accent:#3355ff; --hero1:#12132a; --hero2:#2a1f6b; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#111116; --card:#1a1a22; --fg:#ececf3; --mute:#a3a4b4; --line:#2b2b36; --accent:#8ea0ff; } }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.6 system-ui,"Noto Sans Arabic",sans-serif; }
+  a { color:var(--accent); }
+  .wrap { max-width:1080px; margin:0 auto; padding:0 16px; }
+  .hero { background:linear-gradient(135deg,var(--hero1),var(--hero2)); color:#fff; padding:56px 0 44px; }
+  .brand { display:flex; align-items:center; gap:12px; font-weight:700; font-size:20px; }
+  .brand img { width:40px; height:40px; }
+  .hero h1 { font-size:clamp(30px,5vw,48px); line-height:1.15; margin:28px 0 12px; max-width:760px; }
+  .hero p { color:#cfd2ff; font-size:19px; max-width:680px; margin:0 0 26px; }
+  .cta { display:inline-block; background:#fff; color:#1b1d3a; padding:12px 20px; border-radius:10px; font-weight:700; text-decoration:none; }
+  .cta.soon { background:#ffffff22; color:#fff; border:1px solid #ffffff55; }
+  .shot { display:block; width:100%; max-width:1080px; margin:-8px auto 0; border-radius:12px; box-shadow:0 20px 50px #0005; }
+  section { padding:48px 0 8px; }
+  h2 { font-size:28px; margin:0 0 18px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:18px; }
+  .card b { display:block; margin-bottom:4px; }
+  .card p { margin:0; color:var(--mute); font-size:15.5px; }
+  .shots img { width:100%; border-radius:10px; border:1px solid var(--line); }
+  .price { font-size:32px; font-weight:800; margin:4px 0; }
+  .tag { display:inline-block; font-size:12.5px; padding:2px 8px; border-radius:20px; background:#3355ff1a; color:var(--accent); }
+  [dir="rtl"] { text-align:right; }
+  footer { color:var(--mute); padding:40px 0 56px; font-size:14.5px; }
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="brand"><img src="assets/icon.png" alt="">JevPilot</div>
+    <h1>Tell it what to do. It does it in your browser.</h1>
+    <p>An AI agent that clicks, types, selects and submits on real websites, inside your own Chrome and with your existing logins.
+      It learns a task once and replays it in seconds.</p>
+    <span class="cta soon">Coming soon to the Chrome Web Store</span>
+  </div>
+</header>
+
+<div class="wrap"><img class="shot" src="assets/screenshot-1.png" alt="JevPilot side panel running a task next to a registration form"></div>
+
+<main class="wrap">
+  <section>
+    <h2>What it does</h2>
+    <div class="grid">
+      <div class="card"><b>Any task, in plain words</b><p>English or Arabic. “Prepare” reads the page, plans the task, and asks for anything missing.</p></div>
+      <div class="card"><b>Learns once, replays fast</b><p>The first run teaches a recipe. After that, runs replay in seconds without AI calls, and choices follow your data.</p></div>
+      <div class="card"><b>Spreadsheets → websites</b><p>Paste cells from Excel or Google Sheets. It fills the form once per row and gives you a results CSV.</p></div>
+      <div class="card"><b>Collect lists</b><p>Gathers results, products or listings across paginated pages into a table.</p></div>
+      <div class="card"><b>Checks its own work</b><p>An independent check reads the final page. Anything doubtful is flagged with evidence. It asks before submit or pay.</p></div>
+      <div class="card"><b>Your key, your costs</b><p>Bring your own OpenRouter key and pay the provider directly. A live meter shows tokens and cost per step.</p></div>
+    </div>
+  </section>
+
+  <section class="shots">
+    <h2>See it work</h2>
+    <div class="grid">
+      <img src="assets/screenshot-2.png" alt="Rows replayed in seconds after the first one taught the recipe">
+      <img src="assets/screenshot-3.png" alt="Arabic interface collecting a list across two pages into a table">
+    </div>
+  </section>
+
+  <section>
+    <h2>Pricing</h2>
+    <div class="grid">
+      <div class="card"><span class="tag">Now</span><div class="price">Free</div><p>Everything above, with your own OpenRouter key. You pay only the model provider, usually a fraction of a cent per task.</p></div>
+      <div class="card"><span class="tag">Coming with v1.1</span><div class="price">$10<small>/month</small></div><p>JevPilot Pro for heavy and team use. The license key activates inside the extension.</p></div>
+    </div>
+  </section>
+
+  <section dir="rtl" lang="ar">
+    <h2>بالعربي</h2>
+    <div class="card"><p>JevPilot وكيل ذكاء اصطناعي جوه كروم بتاعك. قولّه عايز إيه بالعربي أو الإنجليزي، وهو يدوس ويكتب ويبعت على المواقع بحساباتك.
+      بيتعلّم المهمة مرة وبيعيدها في ثواني، وبيملا الفورمز من جداول Excel، وبيجمع القوائم في جدول. بمفتاح OpenRouter بتاعك، ومفيش أي سيرفر في النص.</p></div>
+  </section>
+</main>
+
+<footer class="wrap">
+  <a href="privacy.html">Privacy policy</a> · <a href="mailto:mohammed.nagieeb@gmail.com">Contact</a><br>
+  Built on the open-source jev-ultrafast project (MIT). Not affiliated with TypeSafe or Browser Use.
+</footer>
+</body>
+</html>

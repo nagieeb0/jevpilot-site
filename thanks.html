@@ -1,0 +1,45 @@
+<!doctype html>
+<!-- Polar checkout success page: where the license key is and how it will be used. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thank you · JevPilot Pro</title>
+<link rel="icon" href="assets/icon.png">
+<style>
+  :root { --bg:#fbfbfd; --card:#fff; --fg:#17182a; --mute:#5c5f73; --line:#e4e4ee; --accent:#3355ff; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#111116; --card:#1a1a22; --fg:#ececf3; --mute:#a3a4b4; --line:#2b2b36; --accent:#8ea0ff; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.6 system-ui,"Noto Sans Arabic",sans-serif; }
+  main { max-width:640px; margin:0 auto; padding:56px 16px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:24px; margin-bottom:16px; }
+  h1 { margin:0 0 8px; font-size:28px; } p, li { color:var(--fg); } .mute { color:var(--mute); font-size:14px; }
+  a { color:var(--accent); } [dir="rtl"] { text-align:right; }
+</style>
+</head>
+<body>
+<main>
+  <div class="card">
+    <h1>✓ Thank you for getting JevPilot Pro</h1>
+    <ol>
+      <li>Your <b>license key</b> is in the email from Polar and in your Polar customer portal.</li>
+      <li>Open JevPilot → <b>Settings</b> → paste the key. License activation arrives with v1.1; the extension updates automatically.</li>
+      <li>Questions: <a href="mailto:mohammed.nagieeb@gmail.com">mohammed.nagieeb@gmail.com</a></li>
+    </ol>
+    <p class="mute" id="ref"></p>
+  </div>
+  <div class="card" dir="rtl" lang="ar">
+    <h1>✓ شكراً إنك اشتركت في JevPilot Pro</h1>
+    <ol>
+      <li><b>مفتاح الترخيص</b> موجود في الإيميل اللي جالك من Polar، وفي بوابة العملاء بتاعتك على Polar.</li>
+      <li>افتح JevPilot ← <b>الإعدادات</b> ← الصق المفتاح. تفعيل الترخيص جاي في الإصدار 1.1، والإضافة بتتحدّث لوحدها.</li>
+    </ol>
+  </div>
+  <p class="mute"><a href="./">← JevPilot</a> · <a href="privacy.html">Privacy</a></p>
+</main>
+<script>
+  // Polar appends ?checkout_id=…; show it so support can find the order.
+  const id = new URLSearchParams(location.search).get('checkout_id');
+  if (id) document.getElementById('ref').textContent = 'Order reference: ' + id;
+</script>
+</body>
+</html>
