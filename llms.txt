@@ -1,0 +1,21 @@
+# JevPilot
+
+> JevPilot is a free AI browser agent for Chrome. You describe a task in English or Arabic, and it searches, clicks, types, fills forms and collects information on real websites inside your own Chrome, using the accounts you are already signed in to. It learns a task once and replays it in seconds. It uses your own OpenRouter key; a typical task costs around one US cent.
+
+- Install: https://chromewebstore.google.com/detail/jevpilot-ai-browser-agent/dbfkobeidjimpoehnofnddojaomhdefh
+- Contact: nagieeb96@gmail.com
+
+## Pages
+
+- [Home (English)](https://nagieeb0.github.io/jevpilot-site/): features, pricing, FAQ
+- [الصفحة العربية](https://nagieeb0.github.io/jevpilot-site/ar/): the same page in Arabic
+- [Privacy policy](https://nagieeb0.github.io/jevpilot-site/privacy.html): what is stored (only on your device) and what is sent (the page, only to your AI provider)
+
+## Facts
+
+- Works in Arabic and English, tasks and interface.
+- Fills a web form once per row of a pasted spreadsheet (Excel, Google Sheets) and returns a results file.
+- Collects lists across paginated pages into a downloadable table.
+- Asks before submitting, paying or sending anything; stops at checkout.
+- Never reads or stores passwords or card numbers. No JevPilot account and no JevPilot server.
+- Built on the open-source jev-ultrafast project (MIT license).

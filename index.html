@@ -6,10 +6,53 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>JevPilot: AI Browser Agent</title>
 <meta name="description" content="An AI agent in your own Chrome: tell it what to do and it clicks, types and submits. Learns once, replays fast. Bring your own OpenRouter key.">
+<link rel="canonical" href="https://nagieeb0.github.io/jevpilot-site/">
+<link rel="alternate" hreflang="en" href="https://nagieeb0.github.io/jevpilot-site/">
+<link rel="alternate" hreflang="ar" href="https://nagieeb0.github.io/jevpilot-site/ar/">
+<link rel="alternate" hreflang="x-default" href="https://nagieeb0.github.io/jevpilot-site/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nagieeb0.github.io/jevpilot-site/">
 <meta property="og:title" content="JevPilot: AI Browser Agent">
 <meta property="og:description" content="Tell it what to do and it does it in your browser. Learns once, replays fast.">
-<meta property="og:image" content="assets/screenshot-1.png">
+<meta property="og:image" content="https://nagieeb0.github.io/jevpilot-site/assets/screenshot-1.png">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="assets/icon.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "JevPilot",
+      "alternateName": "JevPilot: AI Browser Agent",
+      "description": "AI browser agent for Chrome: tell it a task in English or Arabic and it searches, clicks, types, fills forms and collects information in your own browser. Learns a task once and replays it in seconds.",
+      "applicationCategory": "BrowserApplication",
+      "operatingSystem": "Chrome",
+      "inLanguage": ["en", "ar"],
+      "url": "https://nagieeb0.github.io/jevpilot-site/",
+      "downloadUrl": "https://chromewebstore.google.com/detail/jevpilot-ai-browser-agent/dbfkobeidjimpoehnofnddojaomhdefh",
+      "image": "https://nagieeb0.github.io/jevpilot-site/assets/screenshot-1.png",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "author": { "@type": "Person", "name": "Mohammed Nagieeb", "email": "nagieeb96@gmail.com" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Is JevPilot free?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. The extension is free. It uses your own OpenRouter account, so you pay the AI provider directly; a typical task costs around one US cent, and the side panel shows the exact cost of every task." } },
+        { "@type": "Question", "name": "Does JevPilot work in Arabic?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. You can write tasks in Arabic or English, and the interface is available in both languages." } },
+        { "@type": "Question", "name": "Can JevPilot fill a web form from an Excel or Google Sheets file?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Paste the rows from your spreadsheet and JevPilot fills the form once per row, then gives you a results file. After the first row it replays the same steps in seconds." } },
+        { "@type": "Question", "name": "Is my data safe with JevPilot?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Settings, tasks and memory stay on your device. The page being automated is sent only to the AI provider you connected. Passwords and card numbers are never read or stored, and JevPilot asks before submitting, paying or sending anything." } },
+        { "@type": "Question", "name": "How is JevPilot different from ChatGPT agent or Claude in Chrome?",
+          "acceptedAnswer": { "@type": "Answer", "text": "JevPilot needs no subscription and has no monthly task quota: you pay only for what you use. It runs in your own Chrome with the accounts you are already signed in to, and once it learns a task it replays it in seconds without AI calls." } }
+      ]
+    }
+  ]
+}
+</script>
 <style>
   :root { --bg:#fbfbfd; --card:#fff; --fg:#17182a; --mute:#5c5f73; --line:#e4e4ee; --accent:#3355ff; --hero1:#12132a; --hero2:#2a1f6b; }
   @media (prefers-color-scheme: dark) { :root { --bg:#111116; --card:#1a1a22; --fg:#ececf3; --mute:#a3a4b4; --line:#2b2b36; --accent:#8ea0ff; } }
@@ -22,7 +65,7 @@
   .brand img { width:40px; height:40px; }
   .hero h1 { font-size:clamp(30px,5vw,48px); line-height:1.15; margin:28px 0 12px; max-width:760px; }
   .hero p { color:#cfd2ff; font-size:19px; max-width:680px; margin:0 0 26px; }
-  .cta { display:inline-block; background:#fff; color:#1b1d3a; padding:12px 20px; border-radius:10px; font-weight:700; text-decoration:none; }
+  .cta { display:inline-block; margin:0 8px 8px 0; background:#fff; color:#1b1d3a; padding:12px 20px; border-radius:10px; font-weight:700; text-decoration:none; }
   .cta.soon { background:#ffffff22; color:#fff; border:1px solid #ffffff55; }
   .shot { display:block; width:100%; max-width:1080px; margin:-8px auto 0; border-radius:12px; box-shadow:0 20px 50px #0005; }
   section { padding:48px 0 8px; }
@@ -45,7 +88,8 @@
     <h1>Tell it what to do. It does it in your browser.</h1>
     <p>An AI agent that clicks, types, selects and submits on real websites, inside your own Chrome and with your existing logins.
       It learns a task once and replays it in seconds.</p>
-    <span class="cta soon">Coming soon to the Chrome Web Store</span>
+    <a class="cta" href="https://chromewebstore.google.com/detail/jevpilot-ai-browser-agent/dbfkobeidjimpoehnofnddojaomhdefh">Add to Chrome, free</a>
+    <a class="cta soon" href="ar/" hreflang="ar" lang="ar">بالعربي</a>
   </div>
 </header>
 
@@ -76,14 +120,25 @@
     <h2>Pricing</h2>
     <div class="grid">
       <div class="card"><span class="tag">Now</span><div class="price">Free</div><p>Everything above, with your own OpenRouter key. You pay only the model provider, usually a fraction of a cent per task.</p></div>
-      <div class="card"><span class="tag">Coming with v1.1</span><div class="price">$10<small>/month</small></div><p>JevPilot Pro for heavy and team use. The license key activates inside the extension.</p></div>
+      <div class="card"><span class="tag">Coming soon</span><div class="price">Credit packs</div><p>For people without an OpenRouter account: buy usage once and run tasks, no key or card setup.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Questions</h2>
+    <div class="grid">
+      <div class="card"><b>Is JevPilot free?</b><p>Yes. The extension is free. It uses your own OpenRouter account, so you pay the AI provider directly; a typical task costs around one US cent, and the side panel shows the exact cost of every task.</p></div>
+      <div class="card"><b>Does JevPilot work in Arabic?</b><p>Yes. You can write tasks in Arabic or English, and the interface is available in both languages.</p></div>
+      <div class="card"><b>Can it fill a web form from an Excel or Google Sheets file?</b><p>Yes. Paste the rows from your spreadsheet and JevPilot fills the form once per row, then gives you a results file. After the first row it replays the same steps in seconds.</p></div>
+      <div class="card"><b>Is my data safe?</b><p>Settings, tasks and memory stay on your device. The page being automated is sent only to the AI provider you connected. Passwords and card numbers are never read or stored, and JevPilot asks before submitting, paying or sending anything.</p></div>
+      <div class="card"><b>How is it different from ChatGPT agent or Claude in Chrome?</b><p>JevPilot needs no subscription and has no monthly task quota: you pay only for what you use. It runs in your own Chrome with the accounts you are already signed in to, and once it learns a task it replays it in seconds without AI calls.</p></div>
     </div>
   </section>
 
   <section dir="rtl" lang="ar">
     <h2>بالعربي</h2>
     <div class="card"><p>JevPilot وكيل ذكاء اصطناعي جوه كروم بتاعك. قولّه عايز إيه بالعربي أو الإنجليزي، وهو يدوس ويكتب ويبعت على المواقع بحساباتك.
-      بيتعلّم المهمة مرة وبيعيدها في ثواني، وبيملا الفورمز من جداول Excel، وبيجمع القوائم في جدول. بمفتاح OpenRouter بتاعك، ومفيش أي سيرفر في النص.</p></div>
+      بيتعلّم المهمة مرة وبيعيدها في ثواني، وبيملا الفورمز من جداول Excel، وبيجمع القوائم في جدول. <a href="ar/">الصفحة العربية كاملة</a></p></div>
   </section>
 </main>
 
